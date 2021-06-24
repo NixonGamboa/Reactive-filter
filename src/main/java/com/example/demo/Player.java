@@ -25,6 +25,12 @@ public class Player {
         this.club = club;
     }
 
+    public Player compareTo(Player player){
+        if(player.age>this.age){
+            return player;
+        }
+        return this;
+    }
     public int getId() {
         return id;
     }
